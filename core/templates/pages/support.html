@@ -1,0 +1,6 @@
+{% extends "index.html" %}
+
+{% block page_content %}
+    <h1>{{ page_title }}</h1>
+	<p>Aller sur ma page d' <a href="{{ url_for('post.home_page') }}">Accueil</a></p>
+{% endblock page_content %}
