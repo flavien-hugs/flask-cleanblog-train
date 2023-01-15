@@ -1,0 +1,1 @@
+# Simple blog with flask for students train
