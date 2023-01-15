@@ -3,6 +3,17 @@ from datetime import date
 from . import db
 
 
+
+"""
+class Author:
+    id: int primary key
+    auth_firstname: str
+    auth_lastname: str
+    auth_birthdate: date
+    auth_created: date
+"""
+
+
 class Author(db.Model):
 	__tablename__ = "author"
 	
@@ -25,6 +36,17 @@ class Author(db.Model):
     def delete(self):
         db.session.delete(self)
         db.session.commit()
+
+
+"""
+class Post:
+    id: int primary key
+    post_title: str
+    post_subtitle: str
+    post_content: str (Text)
+    post_author: str
+    post_posted: date
+"""
 
 
 class Post(db.Model):
