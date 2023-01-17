@@ -27,15 +27,15 @@ class Author(db.Model):
 		db.session.add(self)
 		db.session.commit()
 
-    def update(self, auth_firstname, auth_lastname, auth_birthdate):
-        self.auth_firstname = auth_firstname
-        self.auth_lastname = auth_lastname
-        self.auth_birthdate = auth_birthdate
-        db.session.commit()
+	def update(self, auth_firstname, auth_lastname, auth_birthdate):
+		self.auth_firstname = auth_firstname
+		self.auth_lastname = auth_lastname
+		self.auth_birthdate = auth_birthdate
+		db.session.commit()
 
-    def delete(self):
-        db.session.delete(self)
-        db.session.commit()
+	def delete(self):
+		db.session.delete(self)
+		db.session.commit()
 
 
 """
@@ -65,13 +65,13 @@ class Post(db.Model):
 		db.session.add(self)
 		db.session.commit()
 
-    def update(self, post_title, post_subtitle, post_content, post_author):
-        self.post_title = post_title
-        self.post_content = post_subtitle
-        self.post_content = post_content
-        self.post_author = post_author
-        db.session.commit()
+	def update(self, post_title, post_subtitle, post_content, post_author):
+		self.post_title = post_title
+		self.post_content = post_subtitle
+		self.post_content = post_content
+		self.post_author = post_author
+		db.session.commit()
 
-    def delete(self):
-        db.session.delete(self)
-        db.session.commit()
+	def delete(self):
+		db.session.delete(self)
+		db.session.commit()
