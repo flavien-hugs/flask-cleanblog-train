@@ -1,5 +1,5 @@
 <article class="post-preview">
-	<a href="{{ post.id }}">
+	<a href="{{ url_for('post.blog_detail_page', post_id=post.id) }}">
 		<h2 class="post-title">{{ post.post_title }}</h2>
 		<h3 class="post-subtitle">{{ post.post_subtitle }}</h3>
 	</a>
